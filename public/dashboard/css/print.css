@@ -1,0 +1,58 @@
+body{font-family: sans-serif;-webkit-print-color-adjust: exact;}
+.mb-4{margin-bottom: 40px;}
+.mt-2{margin-top: 20px;}
+.page-break{page-break-after: always;}
+.text-primary{color: #1465db;}
+.font-weight-bold{font-weight:bold;}
+.text-capitalize{text-transform:capitalize;}
+.bg-primary-light{background-color: #edf0f3;}
+.text-initial{text-align:initial;}
+
+.table-pad th, .table-pad td{padding: 9px;}
+
+.plain-box{height:30px;width:250px;border:1px solid #000;}
+.dots-blk{height: 15px;overflow: hidden;text-align:center;}
+table.nowrap th, td.nowrap{white-space: nowrap;}
+
+.check-blk{display:flex;align-items:center;}
+.check-blk:after{content: '';width:15px;height:15px;background-color: #eee;border:1px solid #ddd;border-radius: 3px;margin: 0 10px;display:inline-block;}
+
+#letter-bg{display:none;}
+.doc-body{margin: 0 20px;}
+table{width:100%;text-transform:capitalize;border-collapse:collapse;}
+.align-left{text-align:left;}
+.align-right{text-align:right;direction: rtl;}
+/* .table-plain{margin-bottom:20px;} */
+.table-plain .border-bottom th, .table-plain .border-bottom td{padding-bottom: 10px;border-bottom: 1px solid #eeeee1;}
+.table-plain .border-bottom + tr th, .table-plain .border-bottom + tr td{padding-top: 15px;}
+
+.table-plain th{color:#000;}
+.table-plain td{color:#62688b;}
+.text-center{text-align:center;}
+
+.table-primary thead th{background-color:#1465db;color:#fff;}
+.table-primary tbody tr:nth-child(even) td{background-color:#e2f2fe;}
+.table-primary th, .table-primary td{padding:10px;border: 1px solid #93aed9;}
+
+.table-primary thead tr th:first-child, .table-primary tbody tr td:first-child{border-left:0;}
+.table-primary thead tr th:last-child, .table-primary tbody tr td:last-child{border-right:0;}
+
+.badge-lg{padding: 10px 10px;background: #1465db;color: #fff;}
+
+.table-dark thead th{background-color:#373946;color:#fff;}
+.table-dark tbody tr td{background-color:#edf0f3;}
+.table-dark th, .table-dark td{padding:10px;border: 1px solid #d2d4d6;}
+.print-head, .print-foot{height: 0;}
+
+.printDiv h6{color: #1465db;font-size: 1.75rem;margin-bottom: .5rem;}
+
+@media print{
+    @page{
+        size: A4;
+        margin:0;
+    }
+    #letter-bg{display:block;}
+    .print-head{height: 120px;}
+    .print-foot{height: 70px;}
+
+}
